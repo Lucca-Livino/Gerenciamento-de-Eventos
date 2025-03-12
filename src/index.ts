@@ -202,6 +202,7 @@ const menuPrincipal = (usuario: User) => {
                             rl.question('ID do Usuário a ser Deletado: ', (id:number) => {
                                 try {
                                     deleteUser(id);
+                                    SaveLogsUser(`ID: ${usuario.id} | Email: ${usuario.email}`, `Deletou o usuário com o id ${id}`);
                                 } catch (erro) {
                                     console.error("Erro ao deletar o Usuário", erro);
                                 } setTimeout(() => {
@@ -211,11 +212,19 @@ const menuPrincipal = (usuario: User) => {
                             });
                             break;
                         case '6':
+                            try{
                             generateUser()
+                            } catch(erro){
+                                console.error("Erro ao deletar o Usuário", erro)
+                                SaveLogsUser(`ID: ${usuario.id} | Email: ${usuario.email}`, `Gerou um usuário aleatório`);
+                            } setTimeout(() => {
+                                console.log("Voltando ao menu principal...")
+                                menuPrincipal(usuario)
+                              }, 1500);
                             break
                         case '7':
                             menuPrincipal(usuario)
-                                break
+                            break
                         case '8':
                                 rl.close()
                             break

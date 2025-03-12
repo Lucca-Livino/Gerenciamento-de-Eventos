@@ -11,7 +11,7 @@ export function criarArquivoLog(): void {
     fs.mkdirSync(pasta, { recursive: true });
   }
 
-  fs.writeFileSync(caminhoCompleto, 'utf8');
+  fs.writeFileSync(caminhoCompleto,'Histórico de Logs', 'utf8');
 
   console.log(`Arquivo de log criado em: ${caminhoCompleto}`);
 }
