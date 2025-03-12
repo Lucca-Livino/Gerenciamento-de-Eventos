@@ -1,0 +1,27 @@
+{
+  "name": "trabalho-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/services/eventoServices.ts",
+    "devx": "tsx watch src/services/logServices.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "readline": "^1.3.0",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "watch": "^1.0.2",
+    "zod": "^3.24.1"
+  }
+}
