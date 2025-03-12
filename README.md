@@ -21,21 +21,21 @@ O projeto tem como objetivo criar um sistema básico no Typescript para gerencia
 ## Como rodar esse programa
 
 1. Clone o repositório
-    * git clone https://github.com/Lucca-Livino/Gerenciamento-de-Eventos.git
+ * git clone https://github.com/Lucca-Livino/Gerenciamento-de-Eventos.git
 
 2. Certifique-se que a pasta data existe
-  * mkdir data
+ * mkdir data
 
 3. Instale as dependências
-  * npm i
+ * npm i
 
 4. Certifique-se que está na pasta certa
-  * cd src
+ * cd src
 
 5. Execute o código
-  * npx tsx index.ts
+ * npx tsx index.ts
   
 6. Email e senha padrão para entrar no sistema pela primeira vez:
 
-   * Email: admin@email.com
-   * Senha: #Senha123
+ * Email: admin@email.com
+ * Senha: #Senha123
